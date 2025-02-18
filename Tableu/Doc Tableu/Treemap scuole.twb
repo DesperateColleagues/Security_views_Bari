@@ -1,0 +1,936 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='scuole_modificate+' inline='true' name='federated.071u4kl18r04ru1bkhw1o1a2q2nq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='scuole_modificate' name='textscan.0w0hn7c1iori681e4rqmf0zcwe5r'>
+            <connection class='textscan' directory='D:/Università/Magistrale-Data Science/Vis dei dati/Caso di studio' filename='scuole_modificate.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0w0hn7c1iori681e4rqmf0zcwe5r' name='scuole_modificate.csv' table='[scuole_modificate#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT' separator='&#9;'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='nome' ordinal='1' />
+            <column datatype='string' name='ordine' ordinal='2' />
+            <column datatype='string' name='indirizzo' ordinal='3' />
+            <column datatype='string' name='n_biblioteca' ordinal='4' />
+            <column datatype='string' name='n_laboratori' ordinal='5' />
+            <column datatype='string' name='n_aule_attivita_collettive' ordinal='6' />
+            <column datatype='string' name='n_palestre_coperte' ordinal='7' />
+            <column datatype='string' name='n_palestre_scoperte' ordinal='8' />
+            <column datatype='string' name='n_auditorium' ordinal='9' />
+            <column datatype='string' name='n_ambienti_destinati_ad_aule' ordinal='10' />
+            <column datatype='string' name='n_sale_insegnati' ordinal='11' />
+            <column datatype='string' name='n_cucine' ordinal='12' />
+            <column datatype='string' name='n_servizi_igenici' ordinal='13' />
+            <column datatype='string' name='n_ascensori' ordinal='14' />
+            <column datatype='string' name='n_piani' ordinal='15' />
+            <column datatype='string' name='n_aule_non_utilizzate' ordinal='16' />
+            <column datatype='integer' name='n_classi_funzionanti_nell_anno' ordinal='17' />
+            <column datatype='string' name='n_alunni_servizio_trasporto' ordinal='18' />
+            <column datatype='string' name='iscritti_tot' ordinal='19' />
+            <column datatype='string' name='frequentanti_tot' ordinal='20' />
+            <column datatype='string' name='n_docenti' ordinal='21' />
+            <column datatype='string' name='n_bidelli' ordinal='22' />
+            <column datatype='string' name='n_custode' ordinal='23' />
+            <column datatype='string' name='Lat' ordinal='24' />
+            <column datatype='string' name='Lon' ordinal='25' />
+            <column datatype='string' name='quartiere' ordinal='26' />
+            <column datatype='string' name='quartiere_geom' ordinal='27' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;it&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;it_IT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nome]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>nome</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ordine</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ordine]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>ordine</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>indirizzo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[indirizzo]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>indirizzo</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_biblioteca</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_biblioteca]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_biblioteca</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_laboratori</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_laboratori]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_laboratori</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_aule_attivita_collettive</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_aule_attivita_collettive]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_aule_attivita_collettive</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_palestre_coperte</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_palestre_coperte]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_palestre_coperte</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_palestre_scoperte</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_palestre_scoperte]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_palestre_scoperte</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_auditorium</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_auditorium]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_auditorium</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_ambienti_destinati_ad_aule</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_ambienti_destinati_ad_aule]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_ambienti_destinati_ad_aule</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_sale_insegnati</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_sale_insegnati]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_sale_insegnati</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_cucine</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_cucine]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_cucine</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_servizi_igenici</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_servizi_igenici]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_servizi_igenici</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_ascensori</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_ascensori]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_ascensori</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_piani</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_piani]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_piani</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_aule_non_utilizzate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_aule_non_utilizzate]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_aule_non_utilizzate</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_classi_funzionanti_nell_anno</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n_classi_funzionanti_nell_anno]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_classi_funzionanti_nell_anno</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_alunni_servizio_trasporto</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_alunni_servizio_trasporto]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_alunni_servizio_trasporto</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iscritti_tot</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[iscritti_tot]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>iscritti_tot</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>frequentanti_tot</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[frequentanti_tot]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>frequentanti_tot</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_docenti</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_docenti]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_docenti</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_bidelli</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_bidelli]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_bidelli</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_custode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_custode]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>n_custode</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lat]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>Lat</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lon</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lon]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>Lon</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quartiere</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[quartiere]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>quartiere</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quartiere_geom</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[quartiere_geom]</local-name>
+            <parent-name>[scuole_modificate.csv]</parent-name>
+            <remote-alias>quartiere_geom</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Avg' caption='Latitudine' datatype='real' name='[Calculation_1476054823866454016]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT([Lat])' />
+      </column>
+      <column aggregation='Avg' caption='Longitudine' datatype='real' name='[Calculation_1476054823866720257]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT([Lon])' />
+      </column>
+      <column caption='ControlRate' datatype='real' name='[Calculation_1476054823875719171]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ROUND(&#13;&#10;    SUM(FLOAT([frequentanti_tot])) /&#13;&#10;    SUM(FLOAT([n_docenti])),&#13;&#10;    2&#13;&#10;)' />
+      </column>
+      <column caption='TotDocenti' datatype='integer' name='[Calculation_1476054823878488069]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(INT([n_docenti]))' />
+      </column>
+      <column datatype='string' name='[Lon]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='scuole_modificate.csv' datatype='table' name='[__tableau_internal_object_id__].[scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9]' role='measure' type='quantitative' />
+      <column caption='Frequentanti Tot' datatype='string' name='[frequentanti_tot]' role='dimension' type='nominal' />
+      <column caption='Indirizzo' datatype='string' name='[indirizzo]' role='dimension' type='nominal' />
+      <column caption='Iscritti Tot' datatype='string' name='[iscritti_tot]' role='dimension' type='nominal' />
+      <column caption='N Alunni Servizio Trasporto' datatype='string' name='[n_alunni_servizio_trasporto]' role='dimension' type='nominal' />
+      <column caption='N Ambienti Destinati Ad Aule' datatype='string' name='[n_ambienti_destinati_ad_aule]' role='dimension' type='nominal' />
+      <column caption='N Ascensori' datatype='string' name='[n_ascensori]' role='dimension' type='nominal' />
+      <column caption='N Auditorium' datatype='string' name='[n_auditorium]' role='dimension' type='nominal' />
+      <column caption='N Aule Attivita Collettive' datatype='string' name='[n_aule_attivita_collettive]' role='dimension' type='nominal' />
+      <column caption='N Aule Non Utilizzate' datatype='string' name='[n_aule_non_utilizzate]' role='dimension' type='nominal' />
+      <column caption='N Biblioteca' datatype='string' name='[n_biblioteca]' role='dimension' type='nominal' />
+      <column caption='N Bidelli' datatype='string' name='[n_bidelli]' role='dimension' type='nominal' />
+      <column caption='N Classi Funzionanti Nell Anno' datatype='integer' name='[n_classi_funzionanti_nell_anno]' role='dimension' type='quantitative' />
+      <column caption='N Cucine' datatype='string' name='[n_cucine]' role='dimension' type='nominal' />
+      <column caption='N Custode' datatype='string' name='[n_custode]' role='dimension' type='nominal' />
+      <column caption='N Docenti' datatype='string' name='[n_docenti]' role='dimension' type='nominal' />
+      <column caption='N Laboratori' datatype='string' name='[n_laboratori]' role='dimension' type='nominal' />
+      <column caption='N Palestre Coperte' datatype='string' name='[n_palestre_coperte]' role='dimension' type='nominal' />
+      <column caption='N Palestre Scoperte' datatype='string' name='[n_palestre_scoperte]' role='dimension' type='nominal' />
+      <column caption='N Piani' datatype='string' name='[n_piani]' role='dimension' type='nominal' />
+      <column caption='N Sale Insegnati' datatype='string' name='[n_sale_insegnati]' role='dimension' type='nominal' />
+      <column caption='N Servizi Igenici' datatype='string' name='[n_servizi_igenici]' role='dimension' type='nominal' />
+      <column caption='Nome' datatype='string' name='[nome]' role='dimension' type='nominal' />
+      <column caption='Ordine' datatype='string' name='[ordine]' role='dimension' type='nominal' />
+      <column caption='Quartiere' datatype='string' name='[quartiere]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;IT&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='F1' />
+        <field-sort-custom-order field='nome' />
+        <field-sort-custom-order field='ordine' />
+        <field-sort-custom-order field='indirizzo' />
+        <field-sort-custom-order field='n_biblioteca' />
+        <field-sort-custom-order field='n_laboratori' />
+        <field-sort-custom-order field='n_aule_attivita_collettive' />
+        <field-sort-custom-order field='n_palestre_coperte' />
+        <field-sort-custom-order field='n_palestre_scoperte' />
+        <field-sort-custom-order field='n_auditorium' />
+        <field-sort-custom-order field='n_ambienti_destinati_ad_aule' />
+        <field-sort-custom-order field='n_sale_insegnati' />
+        <field-sort-custom-order field='n_cucine' />
+        <field-sort-custom-order field='n_servizi_igenici' />
+        <field-sort-custom-order field='n_ascensori' />
+        <field-sort-custom-order field='n_piani' />
+        <field-sort-custom-order field='n_aule_non_utilizzate' />
+        <field-sort-custom-order field='n_classi_funzionanti_nell_anno' />
+        <field-sort-custom-order field='n_alunni_servizio_trasporto' />
+        <field-sort-custom-order field='iscritti_tot' />
+        <field-sort-custom-order field='frequentanti_tot' />
+        <field-sort-custom-order field='n_docenti' />
+        <field-sort-custom-order field='Calculation_1476054823878488069' />
+        <field-sort-custom-order field='n_bidelli' />
+        <field-sort-custom-order field='n_custode' />
+        <field-sort-custom-order field='Lat' />
+        <field-sort-custom-order field='Calculation_1476054823866454016' />
+        <field-sort-custom-order field='Lon' />
+        <field-sort-custom-order field='Calculation_1476054823866720257' />
+        <field-sort-custom-order field='quartiere' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='scuole_modificate.csv' id='scuole_modificate.csv_448C46FCD77D4036AAA90A900DB2B4D9'>
+            <properties context=''>
+              <relation connection='textscan.0w0hn7c1iori681e4rqmf0zcwe5r' name='scuole_modificate.csv' table='[scuole_modificate#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='it_IT' separator='&#9;'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='nome' ordinal='1' />
+                  <column datatype='string' name='ordine' ordinal='2' />
+                  <column datatype='string' name='indirizzo' ordinal='3' />
+                  <column datatype='string' name='n_biblioteca' ordinal='4' />
+                  <column datatype='string' name='n_laboratori' ordinal='5' />
+                  <column datatype='string' name='n_aule_attivita_collettive' ordinal='6' />
+                  <column datatype='string' name='n_palestre_coperte' ordinal='7' />
+                  <column datatype='string' name='n_palestre_scoperte' ordinal='8' />
+                  <column datatype='string' name='n_auditorium' ordinal='9' />
+                  <column datatype='string' name='n_ambienti_destinati_ad_aule' ordinal='10' />
+                  <column datatype='string' name='n_sale_insegnati' ordinal='11' />
+                  <column datatype='string' name='n_cucine' ordinal='12' />
+                  <column datatype='string' name='n_servizi_igenici' ordinal='13' />
+                  <column datatype='string' name='n_ascensori' ordinal='14' />
+                  <column datatype='string' name='n_piani' ordinal='15' />
+                  <column datatype='string' name='n_aule_non_utilizzate' ordinal='16' />
+                  <column datatype='integer' name='n_classi_funzionanti_nell_anno' ordinal='17' />
+                  <column datatype='string' name='n_alunni_servizio_trasporto' ordinal='18' />
+                  <column datatype='string' name='iscritti_tot' ordinal='19' />
+                  <column datatype='string' name='frequentanti_tot' ordinal='20' />
+                  <column datatype='string' name='n_docenti' ordinal='21' />
+                  <column datatype='string' name='n_bidelli' ordinal='22' />
+                  <column datatype='string' name='n_custode' ordinal='23' />
+                  <column datatype='string' name='Lat' ordinal='24' />
+                  <column datatype='string' name='Lon' ordinal='25' />
+                  <column datatype='string' name='quartiere' ordinal='26' />
+                  <column datatype='string' name='quartiere_geom' ordinal='27' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Foglio 1'>
+      <layout-options>
+        <caption>
+          <formatted-text />
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scuole_modificate+' name='federated.071u4kl18r04ru1bkhw1o1a2q2nq' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.071u4kl18r04ru1bkhw1o1a2q2nq'>
+            <column caption='ControlRate' datatype='real' name='[Calculation_1476054823875719171]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ROUND(&#13;&#10;    SUM(FLOAT([frequentanti_tot])) /&#13;&#10;    SUM(FLOAT([n_docenti])),&#13;&#10;    2&#13;&#10;)' />
+            </column>
+            <column caption='Frequentanti Tot' datatype='string' name='[frequentanti_tot]' role='dimension' type='nominal' />
+            <column caption='N Docenti' datatype='string' name='[n_docenti]' role='dimension' type='nominal' />
+            <column-instance column='[ordine]' derivation='None' name='[none:ordine:nk]' pivot='key' type='nominal' />
+            <column-instance column='[quartiere]' derivation='None' name='[none:quartiere:nk]' pivot='key' type='nominal' />
+            <column caption='Ordine' datatype='string' name='[ordine]' role='dimension' type='nominal' />
+            <column caption='Quartiere' datatype='string' name='[quartiere]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1476054823875719171]' derivation='User' name='[usr:Calculation_1476054823875719171:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1476054823875719171]' derivation='User' name='[usr:Calculation_1476054823875719171:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='1286' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:quartiere:nk]' />
+              <size column='[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[usr:Calculation_1476054823875719171:qk]' />
+              <text column='[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:ordine:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+                <format attr='wrap' value='auto' />
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:ordine:nk]</field>
+                  <field>[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:quartiere:nk]</field>
+                  <field>[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[usr:Calculation_1476054823875719171:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Secondaria II Grado&quot;</value>
+                <value>&quot;VIII - PICONE&quot;</value>
+                <value>7.04</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{DEACAF7A-D503-4A8C-B87E-236A40ED6FB7}' />
+    </worksheet>
+    <worksheet name='Foglio 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BFB23764-347B-4DD4-A1C2-962AF1A111EE}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Foglio 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='177'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='169'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='169'>
+            <card pane-specification-id='4' param='[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:quartiere:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:Calculation_1476054823866454016:ok]</field>
+            <field>[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:Calculation_1476054823866454016:qk]</field>
+            <field>[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:Calculation_1476054823866720257:ok]</field>
+            <field>[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:Calculation_1476054823866720257:qk]</field>
+            <field>[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:Lat:nk]</field>
+            <field>[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:Lon:nk]</field>
+            <field>[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:frequentanti_tot:nk]</field>
+            <field>[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:n_bidelli:nk]</field>
+            <field>[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:n_docenti:nk]</field>
+            <field>[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:nome:nk]</field>
+            <field>[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[none:quartiere:nk]</field>
+            <field>[federated.071u4kl18r04ru1bkhw1o1a2q2nq].[usr:Calculation_1476054823875719171:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{507181EE-75FF-49DC-B274-FA271F2E0023}' />
+    </window>
+    <window class='worksheet' name='Foglio 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B612BDC9-B4A8-45B3-AC18-43D52BA6C87F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Foglio 1' width='192'>
+      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
+      RP8/9xeqU2xA2q8AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Foglio 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
