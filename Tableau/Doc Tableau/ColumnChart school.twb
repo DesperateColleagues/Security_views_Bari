@@ -1,0 +1,897 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='modified_schools_column_chart' inline='true' name='federated.0o18yva1yi05c5114dbee1r7pno6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='modified_schools_column_chart' name='textscan.1iduujv003r9en18r5voa0vcn3n4'>
+            <connection class='textscan' directory='D:/Università/Magistrale-Data Science/Vis dei dati/Security_views_Bari/Tableu/Doc Tableu' filename='modified_schools_column_chart.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1iduujv003r9en18r5voa0vcn3n4' name='modified_schools_column_chart.csv' table='[modified_schools_column_chart#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT'>
+            <column datatype='string' name='quartiere' ordinal='0' />
+            <column datatype='string' name='iscritti_tot' ordinal='1' />
+            <column datatype='string' name='frequentanti_tot' ordinal='2' />
+            <column datatype='string' name='non_frequentanti' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[modified_schools_column_chart.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;it&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;it_IT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quartiere</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[quartiere]</local-name>
+            <parent-name>[modified_schools_column_chart.csv]</parent-name>
+            <remote-alias>quartiere</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[modified_schools_column_chart.csv_A32D771879BB4A35B4ADF0C440BA43FB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iscritti_tot</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[iscritti_tot]</local-name>
+            <parent-name>[modified_schools_column_chart.csv]</parent-name>
+            <remote-alias>iscritti_tot</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[modified_schools_column_chart.csv_A32D771879BB4A35B4ADF0C440BA43FB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>frequentanti_tot</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[frequentanti_tot]</local-name>
+            <parent-name>[modified_schools_column_chart.csv]</parent-name>
+            <remote-alias>frequentanti_tot</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[modified_schools_column_chart.csv_A32D771879BB4A35B4ADF0C440BA43FB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>non_frequentanti</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[non_frequentanti]</local-name>
+            <parent-name>[modified_schools_column_chart.csv]</parent-name>
+            <remote-alias>non_frequentanti</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[modified_schools_column_chart.csv_A32D771879BB4A35B4ADF0C440BA43FB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Totale frequentanti' datatype='integer' name='[Calculation_1262415319034175488]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='int([frequentanti_tot])' />
+      </column>
+      <column caption='Totale iscritti' datatype='integer' name='[Calculation_1262415319034281985]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='int([iscritti_tot])' />
+      </column>
+      <column caption='Totale non frequentanti' datatype='integer' name='[Calculation_1262415319034540034]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='int([non_frequentanti])' />
+      </column>
+      <column caption='modified_schools_column_chart.csv' datatype='table' name='[__tableau_internal_object_id__].[modified_schools_column_chart.csv_A32D771879BB4A35B4ADF0C440BA43FB]' role='measure' type='quantitative' />
+      <column caption='Frequentanti Tot' datatype='string' name='[frequentanti_tot]' role='dimension' type='nominal' />
+      <column caption='Iscritti Tot' datatype='string' name='[iscritti_tot]' role='dimension' type='nominal' />
+      <column caption='Non Frequentanti' datatype='string' name='[non_frequentanti]' role='dimension' type='nominal' />
+      <column caption='Quartiere' datatype='string' name='[quartiere]' role='dimension' type='nominal' />
+      <column-instance column='[__tableau_internal_object_id__].[modified_schools_column_chart.csv_A32D771879BB4A35B4ADF0C440BA43FB]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:modified_schools_column_chart.csv_A32D771879BB4A35B4ADF0C440BA43FB:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1262415319034175488]' derivation='Sum' name='[diff:sum:Calculation_1262415319034175488:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Columns' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_1262415319034540034]' derivation='Sum' name='[diff:sum:Calculation_1262415319034540034:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Columns' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_1262415319034175488]' derivation='Sum' name='[pcto:sum:Calculation_1262415319034175488:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Calculation_1262415319034540034]' derivation='Sum' name='[pcto:sum:Calculation_1262415319034540034:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Calculation_1262415319034175488]' derivation='Sum' name='[sum:Calculation_1262415319034175488:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1262415319034281985]' derivation='Sum' name='[sum:Calculation_1262415319034281985:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1262415319034540034]' derivation='Sum' name='[sum:Calculation_1262415319034540034:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[diff:sum:Calculation_1262415319034175488:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[pcto:sum:Calculation_1262415319034175488:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034175488:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034281985:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[__tableau_internal_object_id__].[cnt:modified_schools_column_chart.csv_A32D771879BB4A35B4ADF0C440BA43FB:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[diff:sum:Calculation_1262415319034540034:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[pcto:sum:Calculation_1262415319034540034:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;IT&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='quartiere' />
+        <field-sort-custom-order field='iscritti_tot' />
+        <field-sort-custom-order field='Calculation_1262415319034281985' />
+        <field-sort-custom-order field='frequentanti_tot' />
+        <field-sort-custom-order field='Calculation_1262415319034175488' />
+        <field-sort-custom-order field='non_frequentanti' />
+        <field-sort-custom-order field='Calculation_1262415319034540034' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='modified_schools_column_chart.csv' id='modified_schools_column_chart.csv_A32D771879BB4A35B4ADF0C440BA43FB'>
+            <properties context=''>
+              <relation connection='textscan.1iduujv003r9en18r5voa0vcn3n4' name='modified_schools_column_chart.csv' table='[modified_schools_column_chart#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='it_IT'>
+                  <column datatype='string' name='quartiere' ordinal='0' />
+                  <column datatype='string' name='iscritti_tot' ordinal='1' />
+                  <column datatype='string' name='frequentanti_tot' ordinal='2' />
+                  <column datatype='string' name='non_frequentanti' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Foglio 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='modified_schools_column_chart' name='federated.0o18yva1yi05c5114dbee1r7pno6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o18yva1yi05c5114dbee1r7pno6'>
+            <column caption='Totale frequentanti' datatype='integer' name='[Calculation_1262415319034175488]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='int([frequentanti_tot])' />
+            </column>
+            <column caption='Totale non frequentanti' datatype='integer' name='[Calculation_1262415319034540034]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='int([non_frequentanti])' />
+            </column>
+            <column caption='Frequentanti Tot' datatype='string' name='[frequentanti_tot]' role='dimension' type='nominal' />
+            <column caption='Non Frequentanti' datatype='string' name='[non_frequentanti]' role='dimension' type='nominal' />
+            <column-instance column='[quartiere]' derivation='None' name='[none:quartiere:nk]' pivot='key' type='nominal' />
+            <column caption='Quartiere' datatype='string' name='[quartiere]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1262415319034175488]' derivation='Sum' name='[sum:Calculation_1262415319034175488:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1262415319034540034]' derivation='Sum' name='[sum:Calculation_1262415319034540034:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034175488:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034175488:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <computed-sort column='[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]' direction='DESC' using='[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]' />
+          <slices>
+            <column>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]' field-type='quantitative' max='8607.3667358770654' min='-1903.6633086624922' range-type='fixed' scope='cols' type='space' />
+            <format attr='height' field='[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]' value='49' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]' value='35' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]' value='300' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5602209568023682' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</rows>
+        <cols>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;XIII - SANTO SPIRITO&quot;</value>
+                <value>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</value>
+                <value>0.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='16' y='0.37037' />
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;VIII - PICONE&quot;</value>
+                <value>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</value>
+                <value>94.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='21' y='0.37037' />
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;XII - PALESE - MACCHIE&quot;</value>
+                <value>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</value>
+                <value>0.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='10' y='0.333333' />
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;X  - MARCONI - SAN GIROLAMO - FESCA&quot;</value>
+                <value>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</value>
+                <value>0.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='12' y='0.222222' />
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;VI - SAN PASQUALE&quot;</value>
+                <value>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</value>
+                <value>0.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='15' y='0.333333' />
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;V - JAPIGIA&quot;</value>
+                <value>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</value>
+                <value>0.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='11' y='0.37037' />
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;IX - STANIC&quot;</value>
+                <value>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</value>
+                <value>0.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='11' y='0.296296' />
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;I - SAN NICOLA&quot;</value>
+                <value>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</value>
+                <value>0.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='12' y='0.296296' />
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;XI - SAN PAOLO&quot;</value>
+                <value>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</value>
+                <value>2.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='12' y='0.518519' />
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;XIV - CARBONARA DI BARI&quot;</value>
+                <value>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</value>
+                <value>4.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='13' y='0.392857' />
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;III - MADONNELLA&quot;</value>
+                <value>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</value>
+                <value>5.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='11' y='0.392857' />
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;II - MURAT&quot;</value>
+                <value>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</value>
+                <value>5.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='14' y='0.333333' />
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;VII - CARRASSI&quot;</value>
+                <value>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</value>
+                <value>25.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='17' y='0.444444' />
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</field>
+                  <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;IV - LIBERTA&apos;&quot;</value>
+                <value>&quot;[federated.0o18yva1yi05c5114dbee1r7pno6].[sum:Calculation_1262415319034540034:qk]&quot;</value>
+                <value>35.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='20' y='0.555556' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{0282E3A2-05D0-4AE3-AA41-148AEC7F0B10}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Foglio 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='169'>
+            <card pane-specification-id='0' param='[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[:Measure Names]</field>
+            <field>[federated.0o18yva1yi05c5114dbee1r7pno6].[none:quartiere:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8A6B627A-1B2C-4477-86A0-B03BA97BC679}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Foglio 2' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
