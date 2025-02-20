@@ -757,6 +757,13 @@
           <style-rule element='legend-title'>
             <format attr='text-align' value='auto' />
           </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0sx8j4p0miw44q15d5kux012o1zz].[usr:Calculation_1277896440987910146:qk]' value='Numero beni confiscati'>
+              <formatted-text>
+                <run bold='true' fontalignment='2' fontname='Tableau Bold'>Numero beni confiscati</run>
+              </formatted-text>
+            </format>
+          </style-rule>
           <style-rule element='annotation'>
             <format attr='fill-color' id='annotation_30' value='#00000000' />
             <format attr='body-type' id='annotation_30' value='box' />
