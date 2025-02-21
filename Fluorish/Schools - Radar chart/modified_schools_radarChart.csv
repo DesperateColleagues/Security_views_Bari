@@ -1,6 +1,6 @@
-ordine,n_biblioteca,n_laboratori,n_palestre_coperte,n_palestre_scoperte,n_auditorium,n_ambienti_destinati_ad_aule,n_cucine,n_servizi_igenici,n_ascensori,n_aule_non_utilizzate,frequentanti_tot
-Asilo,3.0,6.0,7.0,6.0,4.0,54.0,18.0,94.0,9.0,0.0,786.0
-Infanzia,8.0,17.0,14.0,7.0,8.0,114.0,13.0,135.0,16.0,4.0,2479.0
-Primaria,18.0,44.0,22.0,7.0,18.0,325.0,6.0,274.0,20.0,3.0,6664.0
-Secondaria I Grado,8.0,18.0,6.0,2.0,5.0,64.0,1.0,47.0,5.0,0.0,1671.0
-Secondaria II Grado,13.0,120.0,14.0,15.0,11.0,476.0,1.0,410.0,23.0,14.0,10301.0
+ordine,biblioteche,laboratori,palestre_coperte,palestre_scoperte,cucine,ascensori,servizi_igenici,aule,aule_funzionanti_nell_anno,media_studenti
+Asilo,1.0,1.0,1.0,1.0,1.0,1.0,5.0,3.0,3.0,42.0
+Infanzia,1.0,1.0,1.0,1.0,1.0,1.0,5.0,4.0,4.0,86.0
+Primaria,1.0,2.0,1.0,1.0,1.0,1.0,11.0,13.0,13.0,267.0
+Secondaria I Grado,1.0,3.0,1.0,1.0,1.0,1.0,6.0,8.0,10.0,211.0
+Secondaria II Grado,1.0,7.0,1.0,1.0,1.0,2.0,23.0,27.0,27.0,564.0
